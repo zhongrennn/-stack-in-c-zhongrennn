@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Compiling Java",
+      "setup": "",
+      "run": "javac MatrixMultiplication.java",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Checking column size consistency in CSV file",
+      "setup": "",
+      "run": "java MatrixMultiplication ./data/matrix3.csv ./data/matrix4.csv",
+      "input": "",
+      "output": "Error! Column size is not the same in ./data/matrix4.csv at line 2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    },
+    {
+      "name": "Matrix Multiplication 1",
+      "setup": "",
+      "run": "java MatrixMultiplication ./data/matrix1.csv ./data/matrix2.csv",
+      "input": "",
+      "output": "[[58.0,64.0],\r\n[139.0,154.0]]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "Matrix Multiplication 2",
+      "setup": "",
+      "run": "java MatrixMultiplication ./data/matrix5.csv ./data/matrix5.csv",
+      "input": "",
+      "output": "[[310710.0,932115.0,554250.0],\r\n[158844.0,454551.0,265818.0],\r\n[408236.0,1198879.0,701328.0]]",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    }
+  ]
+}
